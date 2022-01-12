@@ -1,5 +1,5 @@
-const userName = process.env.DB_USER;
-const password = process.env.DB_PASS;
+// const userName = process.env.DB_USER;
+// const password = process.env.DB_PASS;
 
 const mysql = require('mysql2');
 const express = require('express');
@@ -16,9 +16,9 @@ app.use(express.json());
 const db = mysql.createConnection({
   host: 'localhost',
   // Your MySQL username,
-  user: `${userName}`,
+  user: 'root',
   // Your MySQL password
-  password: `${password}`,
+  password: 'HUbFvbt3@mtLhmJ$M4N5d-yYsV_ZvvP',
   database: 'election',
 });
 
